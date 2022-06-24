@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>  
+    <div id="container">
+        <header>
+            <div class="header-container">
+                <div class="header-inside-left">
+                    <h1 class="brand-logo"><img src="imgs/header/brand_logo_icon.png" alt="로고입니다"></h1>
+                    <div class="header-search">
+                        <input type="text" class="form-control"  placeholder="Search or jump to...">
+                        <img class="header-search-img" src="imgs/header/slash_icon.png" alt="로고입니다.">
+                    </div>
+                    <ul class="header-list">
+                        <li><a href="#">Pull</a></li>
+                        <li><a href="#">Issues</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Explore</a></li>
+                    </ul>
+                </div>
+                <nav class="header-inside-right">
+                    <img src="imgs/header/bell_icon.png" alt="">
+                    <img src="imgs/header/plus_icon.png" alt="">
+                    <img src="imgs/header/mypage_icon.png" alt="">
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <article class="main-container">
+                    <section class="main-section-one">
+                        <h1 class="section-one-head">Create a new repository</h1>
+                        <span class="section-span">A repository contains all project files, including the revision history. Already have a project repository elsewhere?&nbsp;</span>
+                        <a href="#" class="section-a-tag">Import a repository.</a>
+                    </section>
+                    <section class="main-section-two">
+                        <div class="section-two-header">
+                                <div class="section-left">
+                                    <div>
+                                        <label for="owner" class="bold-font">Owner</label>
+                                        <img src="imgs/main/star_icon.png" alt="별모양">
+                                    </div>
+                                    <div class="section-owner-box">
+                                        <img src="imgs/main/mypage_icon_gray.png" alt="계정이미지">
+                                        <button type="button" class="section-button">&nbsp;Awesummer08</button>
+                                        <img src="imgs/main/arrow_icon.png" alt="아래방향화살표">
+                                    </div>
+                                </div>
+                                <span class="section-slash">/</span>
+                                <div class="section-right">
+                                    <div>
+                                        <label for="respository-name" class="bold-font">Repository name</label>
+                                        <img src="imgs/main/star_icon.png" alt="별모양">
+                                    </div>
+                                    <input type="text" class="section-repository-box">
+                                </div>
+                        </div>
+                        <span class="section-two-span">
+                            Great repository names are short and memorable. Need inspiration? How about 
+                            <a href="#" class="section-two-a-tag">scaling-spork?</a>
+                        </span>
+                        <div class="section-two-bottom">
+                            <label for="description" class="bold-font">Description</label>
+                            <span class="section-two-bottom-span">(optional)</span>
+                            <input type="text" id="description" class="description-box">
+                        </div>
+                    </section>
+                    <section class="main-section-three">
+                        <div class="section-three-contents">
+                            <div class="section-radio">
+                                <input type="radio" name="authority" id="a_public" value="public" checked>
+                                <img src="imgs/main/public_icon.png" alt="퍼블릭이미지입니다">
+                                <div class="description">
+                                    <label for="a_public" class="bold-font">Public</label>
+                                    <span class="description-span">Anyone on the internet can see this repository. You choose who can commit.</span>
+                                </div>
+                            </div>
+                            <div class="section-radio">
+                                <input type="radio" name="authority" id="a_pivate" value="private">
+                                <img src="imgs/main/private_icon.png" alt="">
+                                <div class="description">
+                                    <label for="a_private" class="bold-font">Private</label>
+                                    <span class="description-span">You choose who can see and commit to this repository.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="main-section-four">
+                        <div class="section-four-one">
+                            <h3 class="bold-font">
+                                Initialize this repository with:
+                            </h3>
+                            <p class="h3tag-bottom">Skip this step if you’re importing an existing repository.</p>
+                        </div>
+                        <div class="section-four-two">
+                            <input type="checkbox" id="readme-file" class="section-four-checkbox-">
+                            <div>
+                                <label for="readme-file" class="bold-font">Add a README file</label>
+                                <div>
+                                    <span class="description-span">This is where you can write a long description for your project.&nbsp;</span>
+                                    <a href="#" class="section-a-tag">Learn more.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-four-three">
+                            <h4 class="bold-font">Add .gitignore</h4>
+                            <span class="description-span">Choose which files not to track from a list of templates. Learn more..&nbsp;</span>
+                            <a href="#" class="section-a-tag">Learn more.</a>
+                        </div>
+                        <div class="section-four-four">
+                            <button type="button" class="gitignore-box">.gitignore template:&nbsp;<span class="gitignore-span">None</span></button>
+                            <img src="imgs/main/arrow_icon.png" class="gitignore-img" alt="화살표입니다.">
+                        </div>
+                        <div class="section-four-five">
+                            <h4 class="bold-font">Choose a license</h4>
+                            <span class="description-span">A license tells others what they can and can't do with your code. Learn more.&nbsp;</span>
+                            <a href="#" class="section-a-tag">Learn more.</a>
+                        </div>
+                        <div class="section-four-six">
+                            <button type="button" class="license-box">License:&nbsp;<span class="license-span">None</span></button>
+                            <img src="imgs/main/arrow_icon.png" class="licensebox-img" alt="화살표입니다.">
+                        </div>
+
+                    </section>
+                    <section class="main-section-five">
+                        <img src="imgs/main/exclamation_mark_icon.png" alt="느낌표입니다.">
+                        <p class="exclamation-explanation">You are creating a public repository in your personal account.</p>
+                    </section>
+                    <section class="main-section-six">
+                        <div class="section-six-div">
+                            <button type="button" class="submit-button">Create&nbsp;repository</button>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-main">
+                <div class>
+                    <img src="imgs/footer/logo_gray.png" alt="로고입니다" class="footer-imgs-left">
+                    <img src="imgs/footer/copyright.png" alt="저작권아이콘입니다."  class="footer-imgs-right">
+                </div>
+                <span class="footer-span">2022&nbsp;GitHun,&nbsp;Inc.</span>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-section-a-tag">Terms</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Privacy</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Security</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Status</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Docs</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Contact GitHub</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Pricing</a></li>
+                    <li><a href="#" class="footer-section-a-tag">API</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Training</a></li>
+                    <li><a href="#" class="footer-section-a-tag">Blog</a></li>
+                    <li><a href="#" class="footer-section-a-tag">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
